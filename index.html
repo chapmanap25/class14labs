@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradebook</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="class13lab.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Gradebook</h1>
+
+<fieldset>
+    <legend>Your Information</legend>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
+    <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+    <br>
+    <label for="pointsEarned">Points Earned</label>
+    <input type="text" id="pointsEarned" required>
+    <br>
+    <label for="pointsPossible">Points Earned</label>
+    <input type="text" id="pointsPossible" required>
+    <br>
+</fieldset>
+<br>
+<button id="check">Check your grade</button>
+<button id ="nameReorder">Re-order gradebook by Name</button>
+<button id ="percentReorder">Re-order gradebook by GradePercent</button>
+
+<p class="output"><span id="fName"></span></p>
+<p class="output"><span id="lName"></span></p>
+<p class="output"><span id="finalPercent"></span></p>
+<p class="output">Your letter grade is <span id="finalGrade"></span></p>
+
+<div id='container'>
+    <p></p>
+</div>
+</body>
+</html>
